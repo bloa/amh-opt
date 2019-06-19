@@ -12,7 +12,7 @@
 
 namespace tsp {
   template<class SOL, bool counterT=false>
-  class eval_tsp : public opt::eval_base<SOL> {
+  class eval_tsp : public opt::eval_perm<SOL> {
   public:
     eval_tsp(const instance inst) : d(inst.d()), n(inst.n())  {}
 

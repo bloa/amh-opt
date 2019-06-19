@@ -12,7 +12,7 @@
 
 namespace fsp {
   template<class SOL, bool counterT=false>
-  class eval_pfsp_biobj : public opt::eval_base<SOL> {
+  class eval_pfsp_biobj : public opt::eval_perm<SOL> {
   public:
     eval_pfsp_biobj(const instance inst1, const instance inst2) : eval1(inst1), eval2(inst2) {}
 

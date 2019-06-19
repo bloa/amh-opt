@@ -12,7 +12,7 @@
 
 namespace fsp {
   template<class SOL, bool counterT=false>
-  class eval_pfsp : public opt::eval_base<SOL> {
+  class eval_pfsp : public opt::eval_perm<SOL> {
   public:
     eval_pfsp(const instance& inst) : n(inst.n()), m(inst.m()), p(inst.p()) {
       c.resize(m);

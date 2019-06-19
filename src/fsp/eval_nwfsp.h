@@ -12,7 +12,7 @@
 
 namespace fsp {
   template<class SOL>
-  class eval_nwfsp : public opt::eval_base<SOL> {
+  class eval_nwfsp : public opt::eval_perm<SOL> {
   public:
     eval_nwfsp(const instance& inst) :
       n(inst.n()), m(inst.m()), p(inst.p()), psumv(inst.psumv()) {

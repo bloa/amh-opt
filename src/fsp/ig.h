@@ -72,7 +72,7 @@ namespace fsp {
       for (int k=0; k<d; k++) {
         index = amh::rng.random(sol.size());
         indexes.push_back(sol[index]);
-        sol.schedule().erase(sol.schedule().begin()+index);
+        sol.vec().erase(sol.vec().begin()+index);
         sol.fitness().invalidate();
       }
 

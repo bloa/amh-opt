@@ -12,7 +12,7 @@
 
 namespace qap {
   template<class SOL, bool counterT=false>
-  class eval_qap : public opt::eval_base<SOL> {
+  class eval_qap : public opt::eval_perm<SOL> {
   public:
     eval_qap(const instance inst) : n(inst.n()), flow(inst.flow()), dist(inst.distance())  {}
 
